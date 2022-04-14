@@ -1,0 +1,53 @@
+1- Write a program in C# Sharp to count the total number of words in a string. 
+   Test Data :Input the string : Welcome to Programming , Expected output: 3
+            Console.WriteLine("input your sentence");
+            string sentence = Console.ReadLine();
+            string[] words = sentence.Split(' ');
+            Console.WriteLine("number of words = {0}", words.Length);
+
+2-Write a program in C# Sharp to count a total number of vowel  in a string
+            Console.WriteLine("please enter a string");
+            string word = Console.ReadLine();
+            int vowel = 0;
+            int length = word.Length;
+            for (int i = 0; i < length; i++)
+            {
+                if ( word[i]=='a' || word[i] == 'i' || word[i] == 'e' || word[i] == 'o' || word[i] == 'u' || word[i] == 'A' || word[i] == 'I' || word[i] == 'E' || word[i] == 'O' || word[i] == 'U' )
+                {
+                    vowel++;
+                }
+                
+
+            }
+            Console.WriteLine("total number of vowels = {0}", vowel);
+
+ 3-Write a program in C# Sharp to count a total number of  consonant in a string 
+            Console.WriteLine("Please enter a string");
+            string word = Console.ReadLine();
+           int constant = 0;
+            int vowel = 0;
+            int length = word.Length;
+            for (int i = 0; i < length; i++)
+            {
+
+
+                if (word[i] == 'a' || word[i] == 'i' || word[i] == 'e' || word[i] == 'o' || word[i] == 'u' || word[i] == 'A' || word[i] == 'I' || word[i] == 'E' || word[i] == 'O' || word[i] == 'U')
+                {
+                    vowel++;
+                }
+                else
+                {
+                    constant++;
+                }
+            }
+            Console.WriteLine("Number of constant in your string = {0}", constant);
+
+ 4-Write a program in C# Sharp to split string by commas 
+            Console.WriteLine("Please enter a sentence");
+            string sentence = Console.ReadLine();
+            Console.WriteLine("Replacing = {0}", sentence.Replace(" ", ", "));
+
+5-Write a program in C# Sharp to read a sentence and replace lowercase characters by uppercase 
+            Console.WriteLine("please enter a sentence");
+            string sentence = Console.ReadLine();
+            Console.WriteLine("Sentence after replacing : {0}", sentence.ToUpper());

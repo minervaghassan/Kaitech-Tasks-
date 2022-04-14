@@ -1,0 +1,133 @@
+1- Write a C# Sharp program to accept two integers and check whether they are equal or not
+            Console.WriteLine("Please enter the first number");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            int num2 = int.Parse(Console.ReadLine());
+            if (num1==num2)
+            {
+                Console.WriteLine("the 2 numbers are equal");
+            }
+            else
+            {
+                Console.WriteLine("the 2 numbers are not equal");
+            }
+
+2-Write a C# Sharp program to print the sum of two numbers 
+            Console.WriteLine("please enter the first number");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("please enter the second number");
+            double num2 = double.Parse(Console.ReadLine());
+            double sum = num1 + num2;
+            Console.WriteLine("sum = {0}", sum);
+
+3-Write a C# Sharp program to swap two numbers 
+            Console.WriteLine("please enter the first number");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("please enter the second number");
+            double num2 = double.Parse(Console.ReadLine());
+            double temp = num1;
+            num1 = num2;
+            num2 = temp;
+            Console.WriteLine("the 2 numbers after swapping are : num 1 = {0}, num2 = {1}", num1, num2);
+4- Write a C# Sharp program to read the age of a candidate and determine whether it is eligible for casting his/her own vote 
+            accepted age = 21*/
+            Console.WriteLine("Please enter your age");
+            int age = int.Parse(Console.ReadLine());
+            if (age >=21)
+            {
+                Console.WriteLine("congratulation you can vote");
+            }
+            else
+            {
+                Console.WriteLine("sorry you can't vote");
+            }
+ 5-Write a C# Sharp program that takes a number as input and print its multiplication table
+            Console.WriteLine("please enter your number");
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= 10 ; i++)
+            {
+                Console.WriteLine("{0}*{1}={2}", num, i, num * i);
+            }
+
+6-Write a C# Sharp program that takes four numbers as input to calculate and print the average.
+            Console.WriteLine("Please enter the first number");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            double num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the third number");
+            double num3 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the fourth number");
+            double num4 = double.Parse(Console.ReadLine());
+            double average = (num1 + num2 + num3 + num4) / 4;
+            Console.WriteLine("the average = {0}", average);
+
+7- Write a C# Sharp program that takes two numbers as input and perform an operation (+,-,*,x,/) on them and displays the result of that operation 
+            Console.WriteLine("please enter the first number");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("please enter the second number");
+            double num2 = double.Parse(Console.ReadLine());
+            double sum = num1 + num2;
+            double sub = num1 - num2;
+            double mult = num1 * num2;
+            double div = num1 / num2;
+            double rem = num1 % num2;
+            Console.WriteLine("sum = {0}", sum);
+            Console.WriteLine("sub = {0}", sub);
+            Console.WriteLine("mult = {0}", mult);
+            Console.WriteLine("div = {0}", div);
+            Console.WriteLine("rem = {0}", rem);
+
+8-Write a program in C# Sharp to read 10 numbers from keyboard and find their sum and average
+            int[] arr = new int[10];
+            Console.WriteLine("Please enter 10 numbers");
+            for (int i = 0; i < 10 ; i++)
+            {
+                arr[i]= int.Parse(Console.ReadLine());
+            }
+            arr.Sum();
+            arr.Average();
+            Console.WriteLine("Sum = {0}", arr.Sum());
+            Console.WriteLine("Average = {0}", arr.Average());
+
+ 9-Write a C# Sharp program to check whether a triangle can be formed by the given value for the angles
+            Console.WriteLine("Please enter angle ABC");
+            double ABC = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter angle BAC");
+            double BAC = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter angle ACB");
+            double ACB = double.Parse(Console.ReadLine());
+            double sum = ABC + BAC + ACB;
+            if (sum == 180 )
+            {
+                Console.WriteLine("Triangle can be formed");
+            }
+            else
+            {
+                Console.WriteLine("Triangle can't be formed");
+            }
+
+10-Write a program in C# Sharp to accept a grade and declare the equivalent description
+            Console.WriteLine("please enter your Grade");
+            char grade = char.Parse(Console.ReadLine());
+            switch (grade)
+            {
+                case 'E':
+                    Console.WriteLine("Excellente");
+                    break;
+                case 'V':
+                    Console.WriteLine("Very Good");
+                    break;
+                case 'G':
+                    Console.WriteLine("Good");
+                    break;
+                case 'A':
+                    Console.WriteLine("Average");
+                    break;
+                case 'F':
+                    Console.WriteLine("Fail");
+                    break;
+                default:
+                    Console.WriteLine("Please enter a proper grade");
+                    break;
+
+            }
